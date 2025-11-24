@@ -1,0 +1,7 @@
+object_base: orig/R21
+object: 00000001.app
+hash: cb529cfa3fddcd4291d55c8b889b057f4bb30564
+symbols: config/R21/symbols.txt
+splits: config/R21/splits.txt
+mw_comment_version: 14
+ldscript_template: config/R21/ldscript.lcf
