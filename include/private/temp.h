@@ -3,13 +3,15 @@
  *  This allows for decompiling without relying on any MSL decompilation existing first.
  * ================================================================ */
 
-#ifndef TEMP_H
-#define TEMP_H
+#ifndef PRIVATE_TEMP_H
+#define PRIVATE_TEMP_H
 
 #ifndef COMMON_H
-// We expect Common.h to already be declared so we know we have access to common types
+// We expect Common.h to already be declared
 #error "Do not include this file directly! Include Common.h instead!"
 #endif
+
+#include <private/Types.h>
 
 #ifndef NULL
 #define NULL 0
