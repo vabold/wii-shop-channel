@@ -29,4 +29,14 @@ enum
     TRUE
 };
 
+#ifdef __cplusplus
+#ifdef __CWCC__
+#define STATIC_ASSERT( cond ) __static_assert( cond, #cond )
+#define SIZE_ASSERT( obj, size ) STATIC_ASSERT( sizeof( obj ) == size )
+#else
+#define STATIC_ASSERT( cond )
+#define SIZE_ASSERT( obj, size )
+#endif
+#endif
+
 #endif

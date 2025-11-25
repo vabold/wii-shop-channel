@@ -17,5 +17,6 @@ private:
     Heap *mHeap;
     nw4r::ut::Link mLink;
 };
+SIZE_ASSERT( Disposer, 0x10 );
 
 } // namespace EGG
