@@ -278,6 +278,15 @@ config.libs = [
             Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
+    {
+        "lib": "EGG",
+        "mw_version": config.linker_version,
+        "cflags": cflags_base,
+        "progress_category": "egg",
+        "objects": [
+            Object(NonMatching, "egg/core/eggDisposer.cpp"),
+        ],
+    }
 ]
 
 
@@ -303,6 +312,7 @@ def link_order_callback(module_id: int, objects: List[str]) -> List[str]:
 # Adjust as desired for your project
 config.progress_categories = [
     ProgressCategory("sdk", "SDK Code"),
+    ProgressCategory("egg", "EGG Library"),
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`
