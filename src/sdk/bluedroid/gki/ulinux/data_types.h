@@ -22,11 +22,11 @@
 #include <stdint.h>
 
 #ifndef FALSE
-#  define FALSE  false
+#define FALSE false
 #endif
 
 #ifndef TRUE
-#  define TRUE   true
+#define TRUE true
 #endif
 
 typedef uint8_t UINT8;
@@ -39,17 +39,17 @@ typedef int16_t INT16;
 typedef int32_t INT32;
 typedef unsigned char BOOLEAN;
 
-typedef UINT32          TIME_STAMP;
+typedef UINT32 TIME_STAMP;
 
 #ifdef __arm
-#  define PACKED  __packed
-#  define INLINE  __inline
+#define PACKED __packed
+#define INLINE __inline
 #else
-#  define PACKED
-#  define INLINE
+#define PACKED
+#define INLINE
 #endif
 
-#define BCM_STRCPY_S(x1,x2,x3)      strcpy((x1),(x3))
-#define BCM_STRNCPY_S(x1,x2,x3,x4)  strncpy((x1),(x3),(x4))
+#define BCM_STRCPY_S( x1, x2, x3 ) strcpy( ( x1 ), ( x3 ) )
+#define BCM_STRNCPY_S( x1, x2, x3, x4 ) strncpy( ( x1 ), ( x3 ), ( x4 ) )
 
 #endif
