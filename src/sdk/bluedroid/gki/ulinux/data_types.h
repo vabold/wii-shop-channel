@@ -16,7 +16,7 @@
  *
  ******************************************************************************/
 
-/* Includes changes by CreateSource */
+/* In compliance with Section 4b, this file has been modified */
 
 #ifndef DATA_TYPES_H
 #define DATA_TYPES_H
