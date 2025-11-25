@@ -19,9 +19,7 @@
 #ifndef DATA_TYPES_H
 #define DATA_TYPES_H
 
-#include "common.h"
-// #include <stdint.h>
-// #include <stdbool.h>
+#include <stdint.h>
 
 #ifndef FALSE
 #  define FALSE  false
@@ -31,15 +29,15 @@
 #  define TRUE   true
 #endif
 
-typedef u8 UINT8;
-typedef u16 UINT16;
-typedef u32 UINT32;
-typedef u64 UINT64;
+typedef uint8_t UINT8;
+typedef uint16_t UINT16;
+typedef uint32_t UINT32;
+typedef uint64_t UINT64;
 
-typedef s8 INT8;
-typedef s16 INT16;
-typedef s32 INT32;
-typedef BOOL BOOLEAN;
+typedef int8_t INT8;
+typedef int16_t INT16;
+typedef int32_t INT32;
+typedef unsigned char BOOLEAN;
 
 typedef UINT32          TIME_STAMP;
 
