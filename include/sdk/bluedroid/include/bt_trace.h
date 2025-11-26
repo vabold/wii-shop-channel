@@ -18,9 +18,6 @@
 
 // NOTICE: In compliance with Section 4b, this file has been modified.
 
-#ifndef A47F4A22_FFE7_44F2_94F3_F578EC42B691
-#define A47F4A22_FFE7_44F2_94F3_F578EC42B691
-
 /******************************************************************************
  *
  *  This file contains definitions for implementing the
@@ -1267,5 +1264,3 @@ extern UINT8 btif_trace_level;
 #define bdla( assert_if ) ( (void)0 )
 #endif
 #endif /* BT_TRACE_H */
-
-#endif /* A47F4A22_FFE7_44F2_94F3_F578EC42B691 */
