@@ -18,8 +18,6 @@
 
 // NOTICE: In compliance with Section 4b, this file has been modified.
 
-#ifndef B91DC95E_B948_4239_BDDA_AC92E8BB87F2
-#define B91DC95E_B948_4239_BDDA_AC92E8BB87F2
 #ifndef GKI_COMMON_H
 #define GKI_COMMON_H
 
@@ -376,5 +374,3 @@ extern void gki_dump4( UINT32 *, UINT16, FP_PRINT );
 #endif
 
 #endif
-
-#endif /* B91DC95E_B948_4239_BDDA_AC92E8BB87F2 */

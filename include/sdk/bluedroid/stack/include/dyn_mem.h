@@ -18,8 +18,6 @@
 
 // NOTICE: In compliance with Section 4b, this file has been modified.
 
-#ifndef F41DE804_9FDC_4511_8E7A_9081353FD126
-#define F41DE804_9FDC_4511_8E7A_9081353FD126
 #ifndef DYN_MEM_H
 #define DYN_MEM_H
 
@@ -189,5 +187,3 @@
 #endif
 
 #endif /* #ifdef DYN_MEM_H */
-
-#endif /* F41DE804_9FDC_4511_8E7A_9081353FD126 */

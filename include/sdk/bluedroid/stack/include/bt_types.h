@@ -21,7 +21,7 @@
 #ifndef BT_TYPES_H
 #define BT_TYPES_H
 
-#include "../../gki/ulinux/data_types.h"
+#include "sdk/bluedroid/gki/ulinux/data_types.h"
 
 #ifdef _WIN32
 #ifdef BLUESTACK_TESTER
