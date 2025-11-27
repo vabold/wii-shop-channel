@@ -13,6 +13,9 @@ Sections:
 	.sbss2      type:bss align:8
 	.bss        type:bss align:4
 
+sdk/bluedroid/bta/dm/bta_dm_api.c:
+	.text       start:0x8022FB50 end:0x8022FFBC
+
 egg/core/eggDisposer.cpp:
 	.text       start:0x802B1920 end:0x802B19F4
 	.data       start:0x8035E1B8 end:0x8035E1C8

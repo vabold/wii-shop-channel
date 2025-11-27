@@ -26,6 +26,7 @@
 #ifndef BTA_DM_INT_H
 #define BTA_DM_INT_H
 
+#include "sdk/bluedroid/bta/sys/bta_sys.h"
 #include "sdk/bluedroid/include/bt_target.h"
 
 #if ( BLE_INCLUDED == TRUE && ( defined BTA_GATT_INCLUDED ) && ( BTA_GATT_INCLUDED == TRUE ) )

@@ -27,7 +27,7 @@
 #ifndef BTA_GATT_API_H
 #define BTA_GATT_API_H
 
-#include "bta_api.h"
+#include "sdk/bluedroid/bta/include/bta_api.h"
 #include "sdk/bluedroid/stack/include/gatt_api.h"
 
 #ifndef BTA_GATT_INCLUDED

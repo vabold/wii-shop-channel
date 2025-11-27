@@ -30,7 +30,7 @@
 
 #include "sdk/bluedroid/stack/include/btm_ble_api.h"
 #include "sdk/bluedroid/stack/btm/btm_int.h"
-#include "./vendor_api.h"
+#include "sdk/bluedroid/vnd/include/vendor_api.h"
 
 /* RPA offload VSC specifics */
 #define BTM_BLE_META_IRK_ENABLE 0x01
@@ -63,8 +63,10 @@
 #define BTM_BLE_PF_SRVC_DATA_PATTERN_BIT BTM_BLE_PF_BIT_TO_MASK( BTM_BLE_PF_SRVC_DATA_PATTERN )
 typedef UINT8 tBTM_BLE_PF_SEL_MASK;
 
+#ifndef BTM_BLE_MAX_FILTER_COUNTER
 #define BTM_BLE_MAX_FILTER_COUNTER \
     ( BTM_BLE_MAX_ADDR_FILTER + 1 ) /* per device filter + one generic filter indexed by 0 */
+#endif
 
 #define BTM_CS_IRK_LIST_INVALID 0xff
 

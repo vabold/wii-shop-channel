@@ -38,7 +38,7 @@
 #include "sdk/bluedroid/stack/include/btm_api.h"
 
 #if ( BLE_INCLUDED == TRUE )
-#include "btm_ble_int.h"
+#include "sdk/bluedroid/stack/btm/btm_ble_int.h"
 #if ( SMP_INCLUDED == TRUE )
 #include "sdk/bluedroid/stack/include/smp_api.h"
 #endif

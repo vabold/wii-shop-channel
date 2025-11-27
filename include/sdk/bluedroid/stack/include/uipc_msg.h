@@ -27,7 +27,7 @@
 #ifndef UIPC_MSG_H
 #define UIPC_MSG_H
 
-#include "./bt_types.h"
+#include "sdk/bluedroid/stack/include/bt_types.h"
 
 /****************************************************************************/
 /*                            UIPC version number: 1.0                      */

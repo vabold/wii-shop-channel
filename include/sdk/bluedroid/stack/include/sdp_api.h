@@ -21,7 +21,7 @@
 #ifndef SDP_API_H
 #define SDP_API_H
 
-#include "./sdpdefs.h"
+#include "sdk/bluedroid/stack/include/sdpdefs.h"
 #include "sdk/bluedroid/include/bt_target.h"
 
 /*****************************************************************************

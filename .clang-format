@@ -36,7 +36,6 @@ InsertBraces: True
 InsertNewlineAtEOF: true
 KeepEmptyLinesAtTheStartOfBlocks: False
 MaxEmptyLinesToKeep: 1
-Language: Cpp
 PointerAlignment: Right
 SortIncludes: CaseSensitive
 SpaceAfterCStyleCast: False

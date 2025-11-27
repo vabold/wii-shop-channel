@@ -75,7 +75,7 @@
 #endif
 
 /* Include common GKI definitions used by this platform */
-#include "gki_target.h"
+#include "sdk/bluedroid/include/gki_target.h"
 
 #include "sdk/bluedroid/stack/include/bt_types.h" /* This must be defined AFTER buildcfg.h */
 #include "sdk/bluedroid/stack/include/dyn_mem.h" /* defines static and/or dynamic memory for components */
@@ -1350,9 +1350,9 @@ and USER_HW_DISABLE_API macros */
 **
 ******************************************************************************/
 
-#ifndef BLE_INCLUDED
+// #ifndef BLE_INCLUDED
 #define BLE_INCLUDED TRUE
-#endif
+// #endif
 
 #ifndef BLE_ANDROID_CONTROLLER_SCAN_FILTER
 #define BLE_ANDROID_CONTROLLER_SCAN_FILTER TRUE
@@ -3840,6 +3840,6 @@ The maximum number of payload octets that the local device can receive in a sing
 **
 ******************************************************************************/
 
-#include "bt_trace.h"
+#include "sdk/bluedroid/include/bt_trace.h"
 
 #endif /* BT_TARGET_H */

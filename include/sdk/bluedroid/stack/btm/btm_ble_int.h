@@ -28,9 +28,9 @@
 #ifndef BTM_BLE_INT_H
 #define BTM_BLE_INT_H
 
-#include "sdk/bluedroid/stack/include/btm_ble_api.h"
-#include "./btm_int.h"
 #include "sdk/bluedroid/gki/common/gki.h"
+#include "sdk/bluedroid/stack/include/btm_ble_api.h"
+// #include "./btm_int.h"
 #include "sdk/bluedroid/stack/include/hcidefs.h"
 #include "sdk/bluedroid/include/bt_target.h"
 

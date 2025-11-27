@@ -25,7 +25,7 @@
 #ifndef BTM_BLE_API_H
 #define BTM_BLE_API_H
 
-#include "./btm_api.h"
+#include "sdk/bluedroid/stack/include/btm_api.h"
 #include "sdk/bluedroid/gki/common/gki.h"
 
 #define CHNL_MAP_LEN    5

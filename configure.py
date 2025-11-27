@@ -209,7 +209,7 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
+    "-enc SJIS",  # For Wii compilers, replace with `-enc SJIS`
     "-i include",
     "-i include/stdlib",
     f"-i build/{config.version}/include",
@@ -241,6 +241,11 @@ cflags_runtime = [
     "-gccinc",
     "-common off",
     "-inline auto",
+]
+
+cflags_bluedroid = [
+    *cflags_base,
+    "-O1"
 ]
 
 config.linker_version = "Wii/1.7"
@@ -288,6 +293,15 @@ config.libs = [
         "objects": [
             Object(Matching, "egg/core/eggDisposer.cpp"),
         ],
+    },
+    {
+        "lib": "bluedroid",
+        "mw_version": "Wii/1.0",
+        "cflags": cflags_bluedroid,
+        "progress_category": "bluedroid",
+        "objects": [
+            # Object(NonMatching, "sdk/bluedroid/bta/dm/bta_dm_api.c"),
+        ]
     }
 ]
 
@@ -315,6 +329,7 @@ def link_order_callback(module_id: int, objects: List[str]) -> List[str]:
 config.progress_categories = [
     ProgressCategory("sdk", "SDK Code"),
     ProgressCategory("egg", "EGG Library"),
+    ProgressCategory("bluedroid", "Bluedroid Library")
 ]
 config.progress_each_module = args.verbose
 # Optional extra arguments to `objdiff-cli report generate`

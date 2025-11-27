@@ -21,7 +21,7 @@
 #ifndef GATT_API_H
 #define GATT_API_H
 
-#include "gattdefs.h"
+#include "sdk/bluedroid/stack/include/gattdefs.h"
 #include "sdk/bluedroid/include/bt_target.h"
 
 /*****************************************************************************

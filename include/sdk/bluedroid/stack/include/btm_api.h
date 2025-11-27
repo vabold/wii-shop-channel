@@ -27,9 +27,9 @@
 #ifndef BTM_API_H
 #define BTM_API_H
 
-#include "./hcidefs.h"
+#include "sdk/bluedroid/stack/include/hcidefs.h"
 #include "sdk/bluedroid/include/bt_target.h"
-#include "sdp_api.h"
+#include "sdk/bluedroid/stack/include/sdp_api.h"
 
 #if BLE_INCLUDED == TRUE && SMP_INCLUDED == TRUE
 #include "sdk/bluedroid/stack/include/smp_api.h"
