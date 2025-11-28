@@ -286,6 +286,7 @@ config.libs = [
         "cflags": cflags_base,
         "progress_category": "egg",
         "objects": [
+            Object(NonMatching, "egg/core/eggHeap.cpp"),
             Object(Matching, "egg/core/eggDisposer.cpp"),
         ],
     }

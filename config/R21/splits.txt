@@ -13,6 +13,13 @@ Sections:
 	.sbss2      type:bss align:8
 	.bss        type:bss align:4
 
+egg/core/eggHeap.cpp:
+	.text       start:0x802B00D0 end:0x802B0A9C
+	.data       start:0x8035E060 end:0x8035E0F8
+	.sdata      start:0x803604D8 end:0x803604E8
+	.sbss       start:0x80361360 end:0x80361390
+	.bss        start:0x804F1F80 end:0x804F1FA8
+
 egg/core/eggDisposer.cpp:
 	.text       start:0x802B1920 end:0x802B19F4
 	.data       start:0x8035E1B8 end:0x8035E1C8
